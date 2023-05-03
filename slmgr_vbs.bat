@@ -1,5 +1,5 @@
 @echo off &chcp 1252 >nul &pushd "%~dp0"
-@set "0=%~f0" &powershell -nop -c $f=[IO.File]::ReadAllText($env:0)-split':Arq2bat\:.*';iex($f[1]); X(1) &timeout -1 &exit/b
+@set "0=%~f0" &powershell -nop -c $f=[IO.File]::ReadAllText($env:0)-split':Arq2bat\:.*';iex($f[1]); X(1) &timeout 2 &exit/b
 
 :Arq2bat: Compressed2TXT v6.3
 $k='.,;{-}[+](/)_|^=?O123456789ABCDeFGHyIdJKLMoN0PQRSTYUWXVZabcfghijklmnpqrstuvwxz!@#$&~E<*`%\>'; Add-Type -Ty @'
